@@ -1,0 +1,227 @@
+firm_id,firm_name,fca_group,banking_group,segment,is_peer_bank
+1,2GETHER INSURANCE LTD,NO GROUP,2GETHER INSURANCE LTD,Other,0
+2,ACORN INSURANCE AND FINANCIAL SERVICES LIMITED,ACORN GROUP,ACORN GROUP,Other,0
+3,AJ Bell Management Limited,AJ BELL GROUP,AJ BELL GROUP,Other,0
+4,AJ Bell Securities Limited,AJ BELL GROUP,AJ BELL GROUP,Other,0
+5,ALLICA BANK LIMITED,NO GROUP,ALLICA BANK LIMITED,Other,0
+6,AMERICAN EXPRESS SERVICES EUROPE LIMITED,AMERICAN EXPRESS,American Express,Card issuer,0
+7,AMERICAN INTERNATIONAL GROUP UK LIMITED,"AMERICAN INTERNATIONAL GROUP, INC. (AIG)","AMERICAN INTERNATIONAL GROUP, INC. (AIG)",Other,0
+8,ANIMAL FRIENDS INSURANCE SERVICES LIMITED,PINNACLE PET GROUP,PINNACLE PET GROUP,Other,0
+9,ARAG Legal Expenses Insurance Company Limited,ARAG PLC,ARAG PLC,Other,0
+10,AWP Assistance UK Ltd,ALLIANZ GROUP,ALLIANZ GROUP,Other,0
+11,AWP P&C S.A.,ALLIANZ GROUP,ALLIANZ GROUP,Other,0
+12,AXA Insurance Designated Activity Company,AXA GROUP,AXA GROUP,Other,0
+13,AXA Insurance UK Plc,AXA GROUP,AXA GROUP,Other,0
+14,AXA PPP Healthcare Limited,AXA GROUP,AXA GROUP,Other,0
+15,Accord Mortgages Limited,YORKSHIRE BUILDING SOCIETY,Yorkshire BS,Building society,1
+16,Accredited Insurance (Europe) Ltd,ACCREDITED GROUP,ACCREDITED GROUP,Other,0
+17,Admiral Financial Services Limited,ADMIRAL GROUP PLC,ADMIRAL GROUP PLC,Other,0
+18,Adrian Flux Insurance Services Group,NO GROUP,Adrian Flux Insurance Services Group,Other,0
+19,Advisory Insurance Brokers Limited,ARDONAGH GROUP LIMITED,ARDONAGH GROUP LIMITED,Other,0
+20,Ageas Insurance Limited,AGEAS SA-NV,AGEAS SA-NV,Other,0
+21,Ageas Retail Limited,AGEAS SA-NV,AGEAS SA-NV,Other,0
+22,Aioi Nissay Dowa Insurance UK Limited,AIOI NISSAY DOWA EUROPE LIMITED,AIOI NISSAY DOWA EUROPE LIMITED,Other,0
+23,Aldermore Bank Plc,FIRSTRAND LIMITED,FIRSTRAND LIMITED,Other,0
+24,Allianz Insurance Plc,ALLIANZ GROUP,ALLIANZ GROUP,Other,0
+25,AmTrust Specialty Limited,AMTRUST INTERNATIONAL,AMTRUST INTERNATIONAL,Other,0
+26,Antares Insurance Company Limited,QIC CAPITAL LLC,QIC CAPITAL LLC,Other,0
+27,Arch Insurance (UK) Limited,ARCH CAPITAL GROUP,ARCH CAPITAL GROUP,Other,0
+28,Arthur J. Gallagher Insurance Brokers Limited,GALLAGHER GROUP,GALLAGHER GROUP,Other,0
+29,Assurant General Insurance Limited,ASSURANT INC,ASSURANT INC,Other,0
+30,Astrenska Insurance Limited,COLLINSON GROUP,COLLINSON GROUP,Other,0
+31,Asurion Europe Limited,ASURION,ASURION,Other,0
+32,Atlanta Insurance Intermediaries Limited,MARKERSTUDY GROUP,MARKERSTUDY GROUP,Other,0
+33,Automobile Association Insurance Services Limited,AUTOMOBILE ASSOCIATION (AA),AUTOMOBILE ASSOCIATION (AA),Other,0
+34,Avantia Insurance Limited,AVANTIA GROUP,AVANTIA GROUP,Other,0
+35,Aviva Administration Limited,AVIVA PLC,AVIVA PLC,Other,0
+36,Aviva Health UK Limited,AVIVA PLC,AVIVA PLC,Other,0
+37,Aviva Insurance Limited,AVIVA PLC,AVIVA PLC,Other,0
+38,BISL Limited,MARKERSTUDY GROUP,MARKERSTUDY GROUP,Other,0
+39,BUPA Insurance Services Limited,BUPA GROUP,BUPA GROUP,Other,0
+40,Bank of Ireland (UK) Plc,BANK OF IRELAND GROUP,Bank of Ireland UK,High-street bank,1
+41,Bank of Scotland plc,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank,1
+42,Barclays Bank Plc,BARCLAYS GROUP,Barclays,High-street bank,1
+43,Barclays Bank UK PLC,BARCLAYS GROUP,Barclays,High-street bank,1
+44,Bennetts Motorcycling Services Limited,NO GROUP,Bennetts Motorcycling Services Limited,Other,0
+45,British Gas Services Limited,BRITISH GAS,BRITISH GAS,Other,0
+46,CALL ASSIST LIMITED,NO GROUP,CALL ASSIST LIMITED,Other,0
+47,CAROLE NASH INSURANCE CONSULTANTS LIMITED,MARKERSTUDY GROUP,MARKERSTUDY GROUP,Other,0
+48,COMPLETE COVER GROUP LIMITED,COMPLETE COVER GROUP,COMPLETE COVER GROUP,Other,0
+49,CREATION CONSUMER FINANCE LIMITED,BNP PARIBAS GROUP,BNP PARIBAS GROUP,Other,0
+50,Cabot Credit Management Group Limited,ENCORE CAPITAL GROUP,ENCORE CAPITAL GROUP,Other,0
+51,Capital One (Europe) plc,CAPITAL ONE FINANCIAL CORPORATION,Capital One,Card issuer,0
+52,Car Care Plan Limited,NO GROUP,Car Care Plan Limited,Other,0
+53,Carfinance247 Limited,247 MONEY GROUP,247 MONEY GROUP,Other,0
+54,Castelan Limited,CASTELAN GROUP,CASTELAN GROUP,Other,0
+55,Charter Court Financial Services Limited,CHARTER COURT FINANCIAL SERVICES GROUP PLC,CHARTER COURT FINANCIAL SERVICES GROUP PLC,Other,0
+56,Chubb European Group SE,CHUBB LIMITED,CHUBB LIMITED,Other,0
+57,ClearBank Limited,CLEARBANK GROUP,CLEARBANK GROUP,Other,0
+58,Close Brothers Limited,CLOSE BROTHERS GROUP PLC,CLOSE BROTHERS GROUP PLC,Other,0
+59,Cofunds Limited,AEGON N.V.,AEGON N.V.,Other,0
+60,Computershare Investor Services Plc,NO GROUP,Computershare Investor Services Plc,Other,0
+61,Connells Limited,SKIPTON BUILDING SOCIETY,Skipton BS,Building society,1
+62,Countrywide Assured Plc,CHESNARA PLC,CHESNARA PLC,Other,0
+63,Coutts & Company,NATWEST GROUP,NatWest Group,High-street bank,1
+64,Covea Insurance plc,COVEA GROUP,COVEA GROUP,Other,0
+65,Coventry Building Society,COVENTRY BUILDING SOCIETY,Coventry BS (incl. Co-operative Bank),Building society,1
+66,Cynergy Bank Plc,CYNERGY CAPITAL LTD,CYNERGY CAPITAL LTD,Other,0
+67,Digital Moneybox Limited,NO GROUP,Digital Moneybox Limited,Other,0
+68,Domestic & General Insurance Plc,DOMESTIC & GENERAL GROUP,DOMESTIC & GENERAL GROUP,Other,0
+69,Dual Corporate Risks Limited,DUAL GROUP,DUAL GROUP,Other,0
+70,EBS Pensions Limited,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank,1
+71,ERGO TRAVEL INSURANCE SERVICES LTD,MUNICH RE,MUNICH RE,Other,0
+72,ETORO (UK) LIMITED,ETORO GROUP LTD,ETORO GROUP LTD,Other,0
+73,EUI Limited,ADMIRAL GROUP PLC,ADMIRAL GROUP PLC,Other,0
+74,Elderbridge Limited,TECH MAHINDRA LIMITED,TECH MAHINDRA LIMITED,Other,0
+75,Embark Investment Services Limited,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank,1
+76,Embark Services Limited,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank,1
+77,Equiniti Financial Services Limited,EQUINITI GROUP PLC,EQUINITI GROUP PLC,Other,0
+78,Exeter Friendly Society Limited,NO GROUP,Exeter Friendly Society Limited,Other,0
+79,Experian Limited,EXPERIAN PLC,EXPERIAN PLC,Other,0
+80,Extracover Limited,NO GROUP,Extracover Limited,Other,0
+81,FCE Bank Plc,FORD MOTOR CO,FORD MOTOR CO,Other,0
+82,FIL Life Insurance Limited,FIDELITY INTERNATIONAL GROUP,FIDELITY INTERNATIONAL GROUP,Other,0
+83,Family Assurance Friendly Society Limited,NO GROUP,Family Assurance Friendly Society Limited,Other,0
+84,Family Equity Plan Limited,FAMILY ASSURANCE FRIENDLY SOCIETY LTD,FAMILY ASSURANCE FRIENDLY SOCIETY LTD,Other,0
+85,Financial Administration Services Limited,FIDELITY INTERNATIONAL GROUP,FIDELITY INTERNATIONAL GROUP,Other,0
+86,First Central Insurance Management Limited,FIRST CENTRAL GROUP LIMITED,FIRST CENTRAL GROUP LIMITED,Other,0
+87,FirstRand Bank Limited,FIRSTRAND LIMITED,FIRSTRAND LIMITED,Other,0
+88,Forester Life Limited,FORSTERS FINANCIAL,FORSTERS FINANCIAL,Other,0
+89,Fortegra Europe Insurance Company Ltd,TIPTREE INC,TIPTREE INC,Other,0
+90,Freetrade Limited,IG GROUP,IG GROUP,Other,0
+91,Funding Circle Ltd,NO GROUP,Funding Circle Ltd,Other,0
+92,HELVETIA GLOBAL SOLUTIONS LTD,HELVETIA GROUP,HELVETIA GROUP,Other,0
+93,HERTS INSURANCE CONSULTANTS LIMITED,NO GROUP,HERTS INSURANCE CONSULTANTS LIMITED,Other,0
+94,HSBC UK Bank Plc,HSBC GROUP,HSBC,High-street bank,1
+95,HTG HOME SERVICES LIMITED,NO GROUP,HTG HOME SERVICES LIMITED,Other,0
+96,Halifax Share Dealing Limited,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank,1
+97,Hargreaves Lansdown Asset Management Limited,HARGREAVES LANSDOWN LIMITED,HARGREAVES LANSDOWN LIMITED,Other,0
+98,Hastings Insurance Services Limited,HASTINGS GROUP,HASTINGS GROUP,Other,0
+99,Highway Insurance Company Limited,ALLIANZ GROUP,ALLIANZ GROUP,Other,0
+100,Hiscox Insurance Company Limited,HISCOX GROUP,HISCOX GROUP,Other,0
+101,Homeserve Membership Limited,HOMESERVE GROUP,HOMESERVE GROUP,Other,0
+102,Hood Travel Limited,HOOD GROUP,HOOD GROUP,Other,0
+103,Howserv Limited,STAYSURE HOLDINGS LTD,STAYSURE HOLDINGS LTD,Other,0
+104,I Go 4 Ltd.,MARKERSTUDY GROUP,MARKERSTUDY GROUP,Other,0
+105,IG INDEX LIMITED,IG GROUP,IG GROUP,Other,0
+106,INSURANCE FACTORY LIMITED,MARKERSTUDY GROUP,MARKERSTUDY GROUP,Other,0
+107,INTACT INSURANCE UK LIMITED,INTACT FINANCIAL CORPORATION,INTACT FINANCIAL CORPORATION,Other,0
+108,Ikano Bank AB (publ),INGKA GROUP,INGKA GROUP,Other,0
+109,Inter Partner Assistance SA,AXA GROUP,AXA GROUP,Other,0
+110,Interactive Brokers (U.K.) Limited,INTERACTIVE BROKERS GROUP,INTERACTIVE BROKERS GROUP,Other,0
+111,Interactive Investor Services Limited,ABERDEEN GROUP,ABERDEEN GROUP,Other,0
+112,J.P. MORGAN PERSONAL INVESTING LIMITED,JPMORGAN CHASE & CO,Chase UK,Digital bank,1
+113,J.P. Morgan Europe Limited,JPMORGAN CHASE & CO,Chase UK,Digital bank,1
+114,Kensington Mortgage Company Limited,BARCLAYS GROUP,Barclays,High-street bank,1
+115,Kroo Bank Ltd,NO GROUP,Kroo,Digital bank,1
+116,LONDON & COUNTRY MORTGAGES LIMITED,NO GROUP,LONDON & COUNTRY MORTGAGES LIMITED,Other,0
+117,LeasePlan UK Limited,SOCIETY GENERALE GROUP,SOCIETY GENERALE GROUP,Other,0
+118,Leeds Building Society,LEEDS BUILDING SOCIETY,Leeds BS,Building society,1
+119,Legal and General Assurance Society Limited,LEGAL & GENERAL GROUP PLC,LEGAL & GENERAL GROUP PLC,Other,0
+120,Lenvi Servicing Limited,NO GROUP,Lenvi Servicing Limited,Other,0
+121,Lexham Insurance Consultants Limited,NO GROUP,Lexham Insurance Consultants Limited,Other,0
+122,Link Financial Outsourcing Limited,LINK FINANCIAL GROUP,LINK FINANCIAL GROUP,Other,0
+123,Liverpool Victoria Financial Services Limited,LIVERPOOL VICTORIA GROUP,LIVERPOOL VICTORIA GROUP,Other,0
+124,Liverpool Victoria Insurance Company Limited,ALLIANZ GROUP,ALLIANZ GROUP,Other,0
+125,Lloyds Bank General Insurance Limited,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank,1
+126,Lloyds Bank PLC,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank,1
+127,M & G Securities Limited,M&G PLC,M&G PLC,Other,0
+128,MARKS AND SPENCER FINANCIAL SERVICES PLC,HSBC GROUP,HSBC,High-street bank,1
+129,MARSHMALLOW FINANCIAL SERVICES LIMITED,MARSHMALLOW GROUP,MARSHMALLOW GROUP,Other,0
+130,MBNA Limited,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank,1
+131,MONZO BANK LIMITED,MONZO GROUP,Monzo,Digital bank,1
+132,MUNICH RE DIGITAL PARTNERS LIMITED,MUNICH RE,MUNICH RE,Other,0
+133,ManyPets Ltd,MANY GROUP,MANY GROUP,Other,0
+134,MetLife Europe d.a.c.,"METLIFE, INC.","METLIFE, INC.",Other,0
+135,Metro Bank PLC,METRO BANK GROUP,Metro Bank,High-street bank,1
+136,Moorcroft Debt Recovery Limited,NO GROUP,Moorcroft Debt Recovery Limited,Other,0
+137,MotoNovo Finance Limited,FIRSTRAND LIMITED,FIRSTRAND LIMITED,Other,0
+138,NATIONAL FARMERS UNION MUTUAL INSURANCE SOCIETY LIMITED(THE),NO GROUP,NATIONAL FARMERS UNION MUTUAL INSURANCE SOCIETY LIMITED(THE),Other,0
+139,NATIONAL WESTMINSTER BANK PUBLIC LIMITED COMPANY,NATWEST GROUP,NatWest Group,High-street bank,1
+140,NUCLEUS FINANCIAL SERVICES LIMITED,NUCLEUS FINANCIAL PLATFORMS GROUP,NUCLEUS FINANCIAL PLATFORMS GROUP,Other,0
+141,National House-Building Council,NO GROUP,National House-Building Council,Other,0
+142,Nationwide Building Society,NATIONWIDE BUILDING SOCIETY,Nationwide,Building society,1
+143,Newcastle Building Society,NO GROUP,Newcastle BS,Building society,1
+144,Northern Bank Limited,DANSKE BANK A/S,Danske Bank (Northern Bank),High-street bank,1
+145,OCTOPUS MONEY UNIT TRUST MANAGERS LIMITED,OCTOPUS MONEY,OCTOPUS MONEY,Other,0
+146,One Call Insurance Services Limited,NO GROUP,One Call Insurance Services Limited,Other,0
+147,One Sure Insurance Limited,NO GROUP,One Sure Insurance Limited,Other,0
+148,OneSavings Bank Plc,OSB GROUP,OSB GROUP,Other,0
+149,PRIMA SUBSIDIARY LTD,NO GROUP,PRIMA SUBSIDIARY LTD,Other,0
+150,Paragon Bank Plc,PARAGON BANKING GROUP PLC,PARAGON BANKING GROUP PLC,Other,0
+151,Pepper (UK) Limited,PEPPER GROUP,PEPPER GROUP,Other,0
+152,Phillips & Cohen Associates (UK) Limited,PCA GLOBAL VENTURES,PCA GLOBAL VENTURES,Other,0
+153,Phoenix Life CA Limited,STANDARD LIFE GROUP,STANDARD LIFE GROUP,Other,0
+154,Phoenix Life Limited,STANDARD LIFE GROUP,STANDARD LIFE GROUP,Other,0
+155,Pinnacle Insurance Limited,BNP PARIBAS GROUP,BNP PARIBAS GROUP,Other,0
+156,Principality Building Society,NO GROUP,Principality BS,Building society,1
+157,QBE UK Limited,QBE INSURANCE GROUP,QBE INSURANCE GROUP,Other,0
+158,Qmetric Group Limited,NO GROUP,Qmetric Group Limited,Other,0
+159,Quilter Financial Services Limited,QUILTER GROUP,QUILTER GROUP,Other,0
+160,Quilter Investment Platform Limited,QUILTER GROUP,QUILTER GROUP,Other,0
+161,Quilter Life & Pensions Limited,QUILTER GROUP,QUILTER GROUP,Other,0
+162,RAC FINANCIAL SERVICES LIMITED,RAC GROUP,RAC GROUP,Other,0
+163,RBS Collective Investment Funds Limited,NATWEST GROUP,NatWest Group,High-street bank,1
+164,REASSURED LIMITED,NO GROUP,REASSURED LIMITED,Other,0
+165,RESOLVECALL LIMITED,NO GROUP,RESOLVECALL LIMITED,Other,0
+166,"ROYAL LONDON MUTUAL INSURANCE SOCIETY,LIMITED(THE)",ROYAL LONDON GROUP,ROYAL LONDON GROUP,Other,0
+167,ReAssure Life Limited,STANDARD LIFE GROUP,STANDARD LIFE GROUP,Other,0
+168,ReAssure Limited,STANDARD LIFE GROUP,STANDARD LIFE GROUP,Other,0
+169,Revolut Bank UK Ltd,REVOLUT GROUP,Revolut,Digital bank,1
+170,Rock Insurance Services Limited,ROCK INSURANCE GROUP,ROCK INSURANCE GROUP,Other,0
+171,Rothesay Life Plc,ROTHESAY GROUP,ROTHESAY GROUP,Other,0
+172,SCOTTISH WIDOWS LIMITED,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank,1
+173,SECURE TRUST BANK PUBLIC LIMITED COMPANY,NO GROUP,SECURE TRUST BANK PUBLIC LIMITED COMPANY,Other,0
+174,ST. JAMES'S PLACE UK PLC,ST. JAMES'S PLACE PLC,ST. JAMES'S PLACE PLC,Other,0
+175,Sabre Insurance Company Limited,SABRE INSURANCE GROUP PLC,SABRE INSURANCE GROUP PLC,Other,0
+176,Saga Services Limited,SAGA PLC,SAGA PLC,Other,0
+177,Santander UK Plc,SANTANDER UK GROUP,Santander UK,High-street bank,1
+178,Scottish Equitable Plc,AEGON N.V.,AEGON N.V.,Other,0
+179,Scottish Friendly Assurance Society Limited,NO GROUP,Scottish Friendly Assurance Society Limited,Other,0
+180,Scottish Widows Administration Services Limited,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank,1
+181,Shawbrook Bank Limited,SHAWBROOK GROUP PLC,SHAWBROOK GROUP PLC,Other,0
+182,Shop Direct Finance Company Limited,THE VERY GROUP,THE VERY GROUP,Other,0
+183,Simplyhealth Access,SIMPLYHEALTH GROUP LIMITED,SIMPLYHEALTH GROUP LIMITED,Other,0
+184,SiriusPoint International Insurance Corporation,SIRIUSPOINT,SIRIUSPOINT,Other,0
+185,Skipton Building Society,SKIPTON BUILDING SOCIETY,Skipton BS,Building society,1
+186,Society of Lloyd's,SOCIETY OF LLOYD'S,SOCIETY OF LLOYD'S,Other,0
+187,Somerset Bridge Insurance Services Limited,SOMERSET BRIDGE GROUP,SOMERSET BRIDGE GROUP,Other,0
+188,St. James's Place Wealth Management Plc,ST. JAMES'S PLACE PLC,ST. JAMES'S PLACE PLC,Other,0
+189,Starling Bank Limited,STARLING GROUP,Starling,Digital bank,1
+190,Starr International (Europe) Limited,"STARR INTERNATIONAL COMPANY, INC.","STARR INTERNATIONAL COMPANY, INC.",Other,0
+191,Swift 1st Limited,SWIFT GROUP,SWIFT GROUP,Other,0
+192,THE CO-OPERATIVE BANK P.L.C.,COVENTRY BUILDING SOCIETY,Coventry BS (incl. Co-operative Bank),Building society,1
+193,THE ROYAL BANK OF SCOTLAND PUBLIC LIMITED COMPANY,NATWEST GROUP,NatWest Group,High-street bank,1
+194,TSB Bank plc,BANCO DE SABADELL SA,TSB,High-street bank,1
+195,Tandem Bank Limited,TANDEM GROUP,TANDEM GROUP,Other,0
+196,Telefonica Seguros y Reaseguros Compania Aseguradora S.A.U.,TELEFONICA SA,TELEFONICA SA,Other,0
+197,Telefonica UK Limited,VIRGIN MEDIA O2 JOINT VENTURE,VIRGIN MEDIA O2 JOINT VENTURE,Other,0
+198,Tesco Personal Finance Limited,TESCO BANK,TESCO BANK,Other,0
+199,Tesco Underwriting Limited,TESCO BANK,TESCO BANK,Other,0
+200,The Mortgage Works (UK) Plc,NATIONWIDE BUILDING SOCIETY,Nationwide,Building society,1
+201,The Prudential Assurance Company Limited,M&G PLC,M&G PLC,Other,0
+202,Topaz Finance Limited,COMPUTERSHARE LIMITED,COMPUTERSHARE LIMITED,Other,0
+203,Tradex Insurance Company PLC,SATURN HOLDINGS PLC,SATURN HOLDINGS PLC,Other,0
+204,Trading 212 UK Limited,NO GROUP,Trading 212 UK Limited,Other,0
+205,True Potential Wealth Management LLP,NO GROUP,True Potential Wealth Management LLP,Other,0
+206,U K Insurance Limited,DIRECT LINE GROUP,DIRECT LINE GROUP,Other,0
+207,U.S. Bank Europe DAC,U.S. BANCORP,U.S. BANCORP,Other,0
+208,UBS AG,UBS GROUP,UBS GROUP,Other,0
+209,UK Mortgage Lending Ltd,PEPPER GROUP,PEPPER GROUP,Other,0
+210,UK Warranty Limited,PACIFICA GROUP,PACIFICA GROUP,Other,0
+211,USAY BUSINESS LTD,ARDONAGH GROUP,ARDONAGH GROUP,Other,0
+212,Uinsure Limited,NO GROUP,Uinsure Limited,Other,0
+213,Utility Warehouse Limited,TELECOM PLUS PLC,TELECOM PLUS PLC,Other,0
+214,"VANGUARD ASSET MANAGEMENT, LTD.","THE VANGUARD GROUP, INC.","THE VANGUARD GROUP, INC.",Other,0
+215,Vanquis Bank Limited,VANQUIS BANKING GROUP,Vanquis,Card issuer,0
+216,Vitality Corporate Services Limited,DISCOVERY LIMITED,DISCOVERY LIMITED,Other,0
+217,Vodafone Limited,VODAFONETHREE HOLDINGS LIMITED,VODAFONETHREE HOLDINGS LIMITED,Other,0
+218,Wesleyan Assurance Society,NO GROUP,Wesleyan Assurance Society,Other,0
+219,Xbridge Limited,"THE TRAVELERS COMPANIES, INC.","THE TRAVELERS COMPANIES, INC.",Other,0
+220,Yonder Technology Ltd,NO GROUP,Yonder Technology Ltd,Other,0
+221,Yorkshire Building Society,NO GROUP,Yorkshire BS,Building society,1
+222,Zempler Bank Limited,ACCESS BANK PLC,ACCESS BANK PLC,Other,0
+223,Zopa Bank Limited,ZOPA GROUP LIMITED,Zopa,Digital bank,1
+224,Zurich Assurance Ltd,ZURICH INSURANCE GROUP LIMITED,ZURICH INSURANCE GROUP LIMITED,Other,0
+225,Zurich Insurance Company Ltd,ZURICH INSURANCE GROUP LIMITED,ZURICH INSURANCE GROUP LIMITED,Other,0
+226,esure Insurance Limited,AGEAS SA-NV,AGEAS SA-NV,Other,0

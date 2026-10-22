@@ -1,0 +1,27 @@
+match_on,match_value,banking_group,segment
+group,HSBC GROUP,HSBC,High-street bank
+group,BARCLAYS GROUP,Barclays,High-street bank
+group,LLOYDS BANKING GROUP PLC,Lloyds Banking Group,High-street bank
+group,NATWEST GROUP,NatWest Group,High-street bank
+group,SANTANDER UK GROUP,Santander UK,High-street bank
+group,BANCO DE SABADELL SA,TSB,High-street bank
+group,METRO BANK GROUP,Metro Bank,High-street bank
+group,BANK OF IRELAND GROUP,Bank of Ireland UK,High-street bank
+group,DANSKE BANK A/S,Danske Bank (Northern Bank),High-street bank
+group,NATIONWIDE BUILDING SOCIETY,Nationwide,Building society
+group,COVENTRY BUILDING SOCIETY,Coventry BS (incl. Co-operative Bank),Building society
+group,SKIPTON BUILDING SOCIETY,Skipton BS,Building society
+group,LEEDS BUILDING SOCIETY,Leeds BS,Building society
+firm,Yorkshire Building Society,Yorkshire BS,Building society
+group,YORKSHIRE BUILDING SOCIETY,Yorkshire BS,Building society
+firm,Principality Building Society,Principality BS,Building society
+firm,Newcastle Building Society,Newcastle BS,Building society
+group,MONZO GROUP,Monzo,Digital bank
+group,STARLING GROUP,Starling,Digital bank
+group,REVOLUT GROUP,Revolut,Digital bank
+group,ZOPA GROUP LIMITED,Zopa,Digital bank
+group,JPMORGAN CHASE & CO,Chase UK,Digital bank
+firm,Kroo Bank Ltd,Kroo,Digital bank
+group,CAPITAL ONE FINANCIAL CORPORATION,Capital One,Card issuer
+group,AMERICAN EXPRESS,American Express,Card issuer
+group,VANQUIS BANKING GROUP,Vanquis,Card issuer

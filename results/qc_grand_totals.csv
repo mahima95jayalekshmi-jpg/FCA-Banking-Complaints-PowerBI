@@ -1,0 +1,3 @@
+period,check,flagged
+2026 H1,Opened: products != Grand Total,0
+2026 H1,Closed: products != Grand Total,0

@@ -1,0 +1,23 @@
+banking_group,segment,closed,pct_within_3_days,pct_within_8_weeks,closed_after_8_weeks
+NatWest Group,High-street bank,115363,48.2,82.0,20722.0
+Lloyds Banking Group,High-street bank,200611,56.0,86.4,27330.0
+Bank of Ireland UK,High-street bank,1745,46.9,97.6,42.0
+Monzo,Digital bank,70687,35.9,97.9,1477.0
+Coventry BS (incl. Co-operative Bank),Building society,12777,66.0,98.5,197.0
+Barclays,High-street bank,94667,58.7,99.1,848.0
+Kroo,Digital bank,764,,99.1,7.0
+HSBC,High-street bank,74786,60.7,99.3,492.0
+Skipton BS,Building society,3326,64.6,99.3,23.0
+Nationwide,Building society,92924,54.8,99.5,483.0
+Starling,Digital bank,14362,18.8,99.5,68.0
+Santander UK,High-street bank,56578,53.9,99.7,147.0
+TSB,High-street bank,28524,56.0,99.7,77.0
+Yorkshire BS,Building society,2072,27.6,99.7,6.0
+Principality BS,Building society,857,54.3,99.8,2.0
+Zopa,Digital bank,6342,49.9,99.8,10.0
+Chase UK,Digital bank,11945,48.4,99.9,16.0
+Leeds BS,Building society,1645,60.2,99.9,1.0
+Metro Bank,High-street bank,8738,47.2,99.9,7.0
+Danske Bank (Northern Bank),High-street bank,1456,42.9,100.0,0.0
+Newcastle BS,Building society,466,70.8,100.0,0.0
+Revolut,Digital bank,928,66.5,100.0,0.0
