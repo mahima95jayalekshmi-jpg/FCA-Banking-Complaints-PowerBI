@@ -7,6 +7,10 @@ An analysis of FCA complaints data for 22 UK banking groups, including HSBC, Bar
 
 ![Dashboard overview](images/overview.png)
 
+## Interactive Power BI Dashboard
+
+![FCA Banking Complaints Dashboard](Screenshot%202026-10-22%20200401.png)
+
 ## Key findings: banking and credit cards, 2026 H1
 
 **1. Lloyds and NatWest miss the 8-week deadline far more often than any other bank.**
