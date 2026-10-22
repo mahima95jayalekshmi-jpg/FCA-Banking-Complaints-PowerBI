@@ -1,121 +1,364 @@
-# UK Bank Complaints: Which Banks Are Getting It Wrong?
+# UK Banking Complaints Analysis | FCA Power BI Dashboard
 
-An analysis of FCA complaints data for 22 UK banking groups, including HSBC, Barclays, Lloyds, NatWest, Santander, Nationwide, Monzo and Starling. It compares how often customers complain, how often the bank agrees it was at fault, and how quickly complaints are resolved. These are the outcome measures behind the FCA's **Consumer Duty**.
+**End-to-End Financial Services Data Analytics Portfolio Project**
 
-**Tools:** SQL (SQLite) · Python (pandas, matplotlib) · Power BI (DAX, star schema)
-**Data:** [FCA firm-level complaints data](https://www.fca.org.uk/data/complaints-data/firm-level), 2026 H1, covering firms with 500+ complaints in the half-year
+## Project Overview
 
-![Dashboard overview](images/overview.png)
+This project analyses UK financial services complaints data published by the Financial Conduct Authority (FCA).
 
-## Interactive Power BI Dashboard
+It combines **Python, SQL, SQLite and Power BI** to investigate complaint volumes, customer complaint outcomes, banking group performance and complaint resolution efficiency.
 
-![FCA Banking Complaints Dashboard](Screenshot%202026-10-22%20200401.png)
+The project includes an interactive three-page Power BI dashboard, supporting data-processing scripts, SQL queries and data quality checks.
 
-## Key findings: banking and credit cards, 2026 H1
+**Tools:** Python | Pandas | SQL | SQLite | Power BI | DAX | Matplotlib | Excel
 
-**1. Lloyds and NatWest miss the 8-week deadline far more often than any other bank.**
-Banks must give a final response within 8 weeks, or the customer can take the complaint to the Financial Ombudsman. Every other peer bank resolved at least 97.6% of complaints in time. **Lloyds Banking Group resolved 86.4% and NatWest Group 82.0%.** That is about **27,300 Lloyds and 20,700 NatWest complaints** resolved after the deadline in six months, roughly 1 in 7 and 1 in 5 respectively. Across all the other peer banks combined, the figure was under 4,000.
+**Data source:** [FCA Firm-Level Complaints Data](https://www.fca.org.uk/data/complaints-data/firm-level)
 
-**2. Lloyds and NatWest are also the only big banks above the peer average on both complaint rate and % upheld.**
+**Reporting period:** 2026 H1, as labelled in the project dataset (pending source verification)
 
-| Banking group | Complaints | Per 1,000 accounts | % upheld | % resolved in 8 weeks |
-|---|---|---|---|---|
-| Lloyds Banking Group | 202,389 | 2.77 | 65.2% | 86.4% |
-| NatWest Group | 105,356 | 2.74 | 55.8% | 82.0% |
-| Barclays | 95,471 | 2.34 | 56.9% | 99.1% |
-| Nationwide* | 93,640 | 2.24 | 55.1% | 99.5% |
-| HSBC | 77,159 | 2.20 | 59.3% | 99.3% |
-| Monzo* | 67,488 | 2.39 | 24.0% | 97.9% |
-| Santander UK | 57,274 | 2.36 | 46.9% | 99.7% |
-| **Peer average** | | **2.42** | **54.5%** | |
+**Power BI file:** [Download Interactive Dashboard](FCA_Banking_Complaints_Dashboard.pbix)
 
-Lloyds alone accounts for a quarter of all banking complaints across the 22 peer groups. Its rate per 1,000 accounts is the highest of the big five, and it agrees the customer was right in nearly two out of three cases.
+---
 
-**3. Digital banks uphold far fewer complaints.**
-Digital banks upheld **30.0%** of complaints, against **58.4%** for high-street banks, and resolved more within 8 weeks (98.5% against 91.5%). Monzo upheld just 24.0%. A lower upheld rate can mean fewer genuine failures, or a firm that is slower to accept fault, and this data alone cannot tell which. That makes it a question worth raising rather than a conclusion.
+## 1. Interactive Power BI Dashboard
 
-**4. Smaller banks have the highest complaint rates.**
-Zopa (3.78 per 1,000 accounts), Metro Bank (3.12), Starling* (3.09) and TSB (3.05) top the table, all above every big-five bank.
+The dashboard contains three interactive report pages.
 
-\*Nationwide, Monzo and Starling report on an October–March window. All other banks shown report January–June.
+### Page 1 — Overview
 
-![Complaints resolved after the 8-week deadline](images/consumer_duty.png)
+![Power BI Overview Dashboard](Screenshot%202026-10-22%20200401.png)
 
-## How it works
+**Features:**
+- Total complaints opened and closed
+- Complaints closed within 3 days
+- Complaints closed within 8 weeks
+- Complaints opened by banking group
+- Complaint volumes and resolution activity by product group
+- Interactive Banking Group selector
 
-```
-FCA Excel files ──► Python (etl/load_fca.py) ──► SQLite staging ──► SQL star schema ──► Power BI
-                     reshape 5 measure sheets      stg_complaints     fact + 3 dimensions    Power BI-ready data exports
-```
+**Business purpose:** Provide a high-level overview of complaint activity and operational performance.
 
-1. **Extract and reshape.** The FCA publishes each measure (opened, closed, % upheld and so on) as a separate wide sheet with one column per product. `load_fca.py` reshapes every sheet to one row per firm and product, merges them, and converts the FCA's fractions to percentages.
-2. **Model in SQL.** `02_build_model.sql` builds a star schema (`fact_complaints` with `dim_firm`, `dim_period` and `dim_product`). Firms are mapped to banking groups using the FCA's own group field plus a reference table (`data/reference/banking_groups.csv`). For example, Halifax and Bank of Scotland roll up to Lloyds Banking Group, and Co-operative Bank to Coventry Building Society.
-3. **Correct aggregation.** The FCA gives percentages per firm. The model converts them back to counts (for example, upheld = closed × % upheld), so every total is a ratio of sums, never an average of percentages. Complaint rates use an *implied number of accounts* (complaints ÷ rate × 1,000), which lets the rate for a group of firms be calculated correctly.
-4. **Analyse.** `04_analysis.sql` answers six questions using CTEs, window functions (`RANK`, `LAG`, `SUM() OVER`) and peer benchmarks.
-5. **Visualise.** Power BI imports the star schema from `powerbi/data/`. The DAX measures are in `powerbi/dax_measures.md`.
+### Page 2 — Bank Comparison
 
-## Data quality checks
+![Bank Comparison Dashboard](images/Bank%20Comparison.png)
 
-| Check | Result |
+**Features:**
+- Complaint rates per 1,000 accounts
+- Percentage of complaints upheld
+- Percentage of complaints resolved within 8 weeks
+- Banking group comparisons
+- Interactive Banking Group filter
+
+**Business purpose:** Compare customer complaint outcomes and identify differences in performance across banking groups.
+
+### Page 3 — Complaint Resolution
+
+![Complaint Resolution Dashboard](images/Complaint%20Resolution.png)
+
+**Features:**
+- Percentage of complaints resolved within 3 days
+- Percentage of complaints resolved within 8 weeks
+- Three-day resolution rates by product category
+- Interactive Banking Group selector
+
+**Business purpose:** Analyse resolution efficiency and highlight differences in complaint handling.
+
+---
+
+## 2. Business Questions
+
+The project explores:
+
+1. Which banking groups receive the highest complaint volumes?
+2. How do complaint rates vary between banks?
+3. Which banking groups uphold the highest percentages of complaints?
+4. How quickly are complaints resolved?
+5. Which financial product categories have different complaint patterns?
+6. How can complaint data help businesses identify operational improvement opportunities?
+
+---
+
+## 3. Key Analytical Findings
+
+The following figures were observed in the project's processed dataset and Power BI dashboard. They should be verified against the original FCA source files before being described as independently confirmed regulatory findings.
+
+### Complaint Rate Analysis
+
+For the selected banking and credit card category, Lloyds Banking Group has a calculated rate of **2.77 complaints per 1,000 accounts**.
+
+### Complaints Upheld
+
+The analysed data shows a **65.2% upheld complaint rate** for Lloyds Banking Group.
+
+An upheld percentage indicates complaint outcomes reported by the firm. It should not be used alone to judge overall service quality.
+
+### Complaint Resolution Performance
+
+| KPI | Lloyds Banking Group |
+|---|---:|
+| Complaint rate per 1,000 accounts | 2.77 |
+| Complaints upheld | 65.2% |
+| Resolved within 3 days | 55.96% |
+| Resolved within 8 weeks | 86.4% |
+
+### Product Category Differences
+
+The analysis compares financial product groups, including:
+
+- Banking and credit cards
+- Insurance and pure protection
+- Home finance
+- Investments
+- Decumulation and pensions
+
+Resolution rates and complaint volumes vary across product groups, suggesting areas for further operational investigation.
+
+---
+
+## 4. Technical Workflow
+
+The project follows an end-to-end analytical workflow:
+
+**FCA Excel Files → Python ETL → SQLite Database → SQL Data Model → Power BI Dashboard**
+
+### Step 1 — Data Collection
+
+Publicly available FCA firm-level complaints data is used as the source.
+
+The dataset includes complaint measures, firm information, reporting periods and financial product categories.
+
+### Step 2 — Data Preparation Using Python
+
+**Script:** `etl/load_fca.py`
+
+The Python workflow supports:
+
+- Loading Excel source files
+- Reshaping wide-format data
+- Standardising data fields
+- Handling missing and inconsistent information
+- Preparing complaint measures
+- Exporting structured records for SQL analysis
+
+**Libraries:** Pandas and other dependencies listed in `requirements.txt`.
+
+### Step 3 — Data Modelling Using SQL
+
+The project uses SQLite and SQL scripts to organise data for reporting.
+
+The star-schema model includes:
+
+| Table | Purpose |
 |---|---|
-| Product columns add up to the FCA Grand Total (opened and closed) | 0 mismatches |
-| Duplicate period-firm-product keys | 0 |
-| Percentages outside 0–100 | 0 |
-| % within 3 days + % within 8 weeks > 100% | 0 |
-| Negative counts | 0 |
-| Reference mappings that matched no firm | 0 |
-| Firm-product rows with no accounts figure (excluded from per-1,000 rates only) | 43 |
-| Firms reporting on a non-calendar 6-month window | 34 of 226 |
+| `fact_complaints` | Complaint counts and measures |
+| `dim_firm` | Firm and banking group information |
+| `dim_product` | Financial product categories |
+| `dim_period` | Reporting period information |
 
-## Power BI report
+Supporting scripts include:
 
-| Page | What it shows |
+- `01_schema.sql` — Defines database structures
+- `02_build_model.sql` — Builds the reporting model
+- `03_quality_checks.sql` — Contains data validation checks
+- `04_analysis.sql` — Contains analytical queries
+
+### Step 4 — Analytical Queries
+
+SQL is used to support analysis of complaint volumes, rates, upheld outcomes and resolution performance.
+
+The project includes techniques such as:
+
+- Joins
+- Aggregation
+- Common Table Expressions (CTEs)
+- Window functions
+- Banking group comparisons
+- Performance benchmarking
+
+### Step 5 — Power BI Visualisation
+
+Power BI is used to create the interactive report.
+
+DAX measures support calculations including:
+
+- Complaint rate per 1,000 accounts
+- Complaints upheld percentage
+- Resolved within 3 days percentage
+- Resolved within 8 weeks percentage
+
+Banking Group slicers enable users to interact with the report and explore individual banking groups.
+
+---
+
+## 5. Data Quality Checks
+
+The repository includes SQL-based validation checks designed to assess data accuracy and consistency.
+
+| Check | Purpose |
 |---|---|
-| **Overview** | Headline KPIs, complaint rate by banking group against the peer average, and bank segment comparisons |
-| **Bank comparison** | Select a bank to compare it with peers by product, with % upheld over time |
-| **Consumer Duty view** | Scatter of complaint rate against % upheld with peer-average quadrants, a bank × product heatmap, and the biggest increases |
+| Duplicate records | Identify duplicate firm-product-period records |
+| Missing values | Detect incomplete data |
+| Percentage validation | Identify percentages outside valid ranges |
+| Negative counts | Detect invalid complaint volumes |
+| Total reconciliation | Compare product totals with reported grand totals |
+| Reference mapping checks | Identify unmatched firm or banking group references |
+| Reporting-period checks | Identify inconsistent reporting windows |
 
-Includes 20 DAX measures: period-on-period change, peer averages that ignore the bank filter, dynamic ranking, a dynamic page title and conditional colour.
+SQL scripts and saved analysis outputs are provided in the repository.
 
-The charts in this README are static previews generated by `create_dashboard.py` from the SQL results. The interactive report is built in Power BI Desktop from `powerbi/data/`, using `powerbi/dax_measures.md` and the page-by-page guide in `powerbi/report_layout.md`.
+---
 
-## Repository structure
+## 6. Repository Structure
 
-```
-├── etl/load_fca.py               # Extract, reshape, load, run SQL, export for Power BI
-├── create_dashboard.py           # Static chart previews for this README
-├── sql/
-│   ├── 01_schema.sql             # Staging, reference and star-schema tables
-│   ├── 02_build_model.sql        # Builds dimensions and fact from staging
-│   ├── 03_quality_checks.sql     # 10 data quality checks
-│   └── 04_analysis.sql           # 6 analysis questions
+```text
+FCA-Banking-Complaints-PowerBI/
+│
+├── FCA_Banking_Complaints_Dashboard.pbix
+├── README.md
+├── requirements.txt
+├── create_dashboard.py
+├── Screenshot 2026-10-22 200401.png
+│
 ├── data/
-│   ├── raw/                      # FCA Excel files
-│   └── reference/banking_groups.csv
+│   ├── raw/
+│   └── reference/
+│       └── banking_groups.csv
+│
+├── etl/
+│   └── load_fca.py
+│
+├── sql/
+│   ├── 01_schema.sql
+│   ├── 02_build_model.sql
+│   ├── 03_quality_checks.sql
+│   └── 04_analysis.sql
+│
 ├── powerbi/
-│   ├── data/                     # Star-schema CSVs imported by Power BI
+│   ├── data/
 │   ├── dax_measures.md
 │   ├── report_layout.md
 │   └── theme.json
-├── results/                      # Quality check and analysis outputs
-└── images/                       # Chart previews
+│
+├── results/
+│
+└── images/
+    ├── Bank Comparison.png
+    ├── Complaint Resolution.png
+    ├── consumer_duty.png
+    └── overview.png
 ```
 
-## How to run
+The structure summarises the project folders and supporting files. Some nested files or generated outputs may vary.
+
+---
+
+## 7. How to Run the Project
+
+### Requirements
+
+- Python 3
+- SQLite
+- Power BI Desktop
+- Project dependencies listed in `requirements.txt`
+
+### Install Python Dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+### Run Data Preparation
+
+```bash
 python etl/load_fca.py
+```
+
+### Generate Static Analysis Charts
+
+```bash
 python create_dashboard.py
 ```
 
-To add a new half-year, download the FCA's `firm-level-complaints-data-YYYY-hN.xlsx` into `data/raw/` and run the script again. Every period is reloaded and the Power BI tables are refreshed.
+The scripts require the corresponding input files and project dependencies.
 
-## Limitations
+### Open the Power BI Report
 
-- **Self-reported data.** Firms report their own complaint numbers and account counts to the FCA, which publishes them as submitted.
-- **Different reporting windows.** Some firms, including Nationwide, Monzo and Starling, report on a 6-month window that does not match the calendar half-year.
-- **Size threshold.** Only firms with 500 or more complaints in the period are published individually.
-- **% upheld is the firm's own decision.** It does not include later Financial Ombudsman rulings.
-- **Comparing products.** Complaint rates are only comparable within one product group, because rates per account and rates per policy measure different things. The report defaults to banking and credit cards.
-- **Groups follow current ownership.** Firms are grouped by the FCA's group field for the latest period.
+1. Download `FCA_Banking_Complaints_Dashboard.pbix`.
+2. Open it using Microsoft Power BI Desktop.
+3. Explore the Overview page.
+4. Compare banking groups on the Bank Comparison page.
+5. Examine resolution performance on the Complaint Resolution page.
+6. Use the interactive slicers to filter the visuals.
+
+---
+
+## 8. Additional Consumer Duty Analysis
+
+![Consumer Duty Analysis](images/consumer_duty.png)
+
+The repository contains a supplementary static analysis visualisation related to complaint-handling performance and FCA Consumer Duty considerations.
+
+This visualisation is separate from the three-page Power BI report.
+
+---
+
+## 9. Business Value
+
+This project demonstrates how data analysis can help financial services organisations:
+
+- Monitor customer complaint volumes
+- Track complaint outcomes
+- Compare banking group performance
+- Measure complaint resolution efficiency
+- Identify areas requiring further investigation
+- Support KPI reporting
+- Improve evidence-based business decision-making
+
+The analytical approach is relevant to customer operations, financial services analytics and business performance reporting.
+
+---
+
+## 10. Skills Demonstrated
+
+### Technical Skills
+
+- Python and Pandas
+- SQL and SQLite
+- Power BI and DAX
+- Data cleaning and preparation
+- Data modelling
+- Data quality validation
+- Data visualisation
+- Dashboard development
+
+### Business and Analytical Skills
+
+- KPI development
+- Financial services analytics
+- Customer complaints analysis
+- Performance monitoring
+- Comparative analysis
+- Business reporting
+- Insight communication
+
+---
+
+## 11. Limitations
+
+- Complaints information is submitted by financial firms.
+- Reporting windows may differ between institutions.
+- Complaint volumes can be influenced by institution size.
+- Complaint rates should be compared within consistent product categories.
+- Upheld percentages do not necessarily include subsequent ombudsman decisions.
+- Resolution percentages should not automatically be interpreted as evidence of regulatory non-compliance.
+- Reporting periods and analytical results should be checked against original FCA source files before external use.
+
+---
+
+## 12. Data Source and Attribution
+
+**Financial Conduct Authority (FCA)**
+
+[FCA Firm-Level Complaints Data](https://www.fca.org.uk/data/complaints-data/firm-level)
+
+This is an independent data analytics portfolio project and is not an official FCA publication.
