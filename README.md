@@ -3,7 +3,7 @@
 **End-to-End Financial Services Data Analytics Portfolio Project**
 
 ## Project Overview
-
+Tech Stack: Python | SQL | Power BI | Data Cleaning | Financial Services Analytics
 This project analyses UK financial services complaints data published by the Financial Conduct Authority (FCA).
 
 It combines **Python, SQL, SQLite and Power BI** to investigate complaint volumes, customer complaint outcomes, banking group performance and complaint resolution efficiency.
